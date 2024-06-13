@@ -50,10 +50,15 @@ This project aims to predict whether a passenger would survive the Titanic disas
 
 titanic-survival-prediction/
 ├── Titanic_Survival_Prediction.ipynb
+
 ├── titanic.csv
+
 ├── requirements.txt
+
 ├── README.md
+
 └── Images
+
  ├── survival_rate_by_pclass.png
  ├── survival_rate_by_gender.png
  └── age_distribution.png
