@@ -49,6 +49,7 @@ This project aims to predict whether a passenger would survive the Titanic disas
 ## Project Structure
 
 titanic-survival-prediction/
+
 ├── Titanic_Survival_Prediction.ipynb
 
 ├── titanic.csv
@@ -59,9 +60,11 @@ titanic-survival-prediction/
 
 └── Images
 
- ├── survival_rate_by_pclass.png
- ├── survival_rate_by_gender.png
- └── age_distribution.png
+     ├── survival_rate_by_pclass.png
+ 
+     ├── survival_rate_by_gender.png
+ 
+     └── age_distribution.png
 
 
 - `Titanic_Survival_Prediction.ipynb`: Jupyter Notebook containing the entire project code.
