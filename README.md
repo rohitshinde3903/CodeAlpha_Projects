@@ -48,3 +48,91 @@ This project aims to predict whether a passenger would survive the Titanic disas
 
 ## Project Structure
 
+titanic-survival-prediction/
+├── Titanic_Survival_Prediction.ipynb
+├── titanic.csv
+├── requirements.txt
+├── README.md
+└── Images
+ ├── survival_rate_by_pclass.png
+ ├── survival_rate_by_gender.png
+ └── age_distribution.png
+
+
+- `Titanic_Survival_Prediction.ipynb`: Jupyter Notebook containing the entire project code.
+- `titanic.csv`: Dataset file.
+- `requirements.txt`: List of required packages for the project.
+- `README.md`: Project documentation.
+
+## Models Used
+
+1. **Logistic Regression**
+2. **Random Forest Classifier**
+
+## Results
+
+### Logistic Regression
+- **Accuracy**: 81.56%
+- **Classification Report**:
+    ```
+    precision    recall  f1-score   support
+
+           0       0.84      0.86      0.85       105
+           1       0.78      0.75      0.76        74
+
+    accuracy                           0.82       179
+    macro avg       0.81      0.81      0.81       179
+    weighted avg       0.82      0.82      0.82       179
+    ```
+- **Confusion Matrix**:
+    ```
+    [[90 15]
+     [18 56]]
+    ```
+
+### Random Forest Classifier
+- **Accuracy**: 84.36%
+- **Classification Report**:
+    ```
+    precision    recall  f1-score   support
+
+           0       0.85      0.90      0.88       105
+           1       0.83      0.76      0.79        74
+
+    accuracy                           0.84       179
+    macro avg       0.84      0.83      0.83       179
+    weighted avg       0.84      0.84      0.84       179
+    ```
+- **Confusion Matrix**:
+    ```
+    [[95 10]
+     [18 56]]
+    ```
+
+## Feature Importance
+
+The Random Forest model's feature importance analysis shows the following:
+- **Sex**: Most important factor.
+- **Pclass**: Second most important factor.
+- **Fare**: Third most important factor.
+
+## Visualizations
+
+### Survival Rate by Gender
+![Survival Rate by Gender](images/survival_rate_by_gender.png)
+
+### Survival Rate by Pclass
+![Survival Rate by Pclass](images/survival_rate_by_pclass.png)
+
+### Age Distribution of Survivors vs Non-Survivors
+![Age Distribution](images/age_distribution.png)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
